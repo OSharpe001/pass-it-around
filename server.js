@@ -18,6 +18,8 @@ app.get("/", (req, res) => {
 app.get("/:number_of_cups", (request, response) => {
     if (request.params.number_of_cups > 0) {
         response.send(`<h1>${request.params.number_of_cups} big cups of tea on the wall</h1><br/><a href="/${request.params.number_of_cups - 1}">take one down, pass it around</a>`);
+    } else if (request.params.number_of_cups = 1) {
+        response.send(`<h1>${request.params.number_of_cups} big cup of tea on the wall</h1><br/><a href="/${request.params.number_of_cups - 1}">take one down, pass it around</a>`);
     } else {
         response.send(`<h1>${request.params.number_of_cups} big cups of tea on the wall</h1><br/><a href="/">Start Over</a>`);
     };
