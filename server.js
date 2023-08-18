@@ -10,7 +10,7 @@ app.listen(port, (req, res) => {
 });
 
 
-// ROUTE(S)
+// ROUTES
 app.get("/", (req, res) => {
     res.send(`<h1>99 big cups of tea on the wall</h1><br/><a href="/98">take one down, pass it around</a>`)
 });
